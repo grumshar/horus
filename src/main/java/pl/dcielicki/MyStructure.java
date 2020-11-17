@@ -18,7 +18,7 @@ public class MyStructure implements IMyStructure {
         return findByPredicate(node -> node.getRenderer().equals(renderer));
     }
 
-    private INode findByPredicate(Predicate<? super INode> predicate) {
+    private INode findByPredicate(Predicate<INode> predicate) {
         return this.nodes.stream()
                 .flatMap(MyStructure::flatten)
                 .filter(predicate)

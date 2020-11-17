@@ -59,7 +59,7 @@ class MyStructureTest {
 
     @Test
     void testFindByRenderer_NodeNotFound() {
-        assertNull(myStructure.findByCode("wrongCode"));
+        assertNull(myStructure.findByRenderer("wrongRenderer"));
     }
 
     @Test
